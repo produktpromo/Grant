@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Результат — демонстрационная заявка</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,33 +12,23 @@
       <div>
         <strong>ГРАНТ</strong>
         <span>Демонстрационный портал</span>
-      </div>
-    </div>
-    <div class="demo-badge">DEMO / УЧЕБНЫЙ МАКЕТ</div>
-  </header>
-
   <main class="result-container">
     <div class="result-card">
       <div class="result-icon">!</div>
       <p class="eyebrow">РЕЗУЛЬТАТ РАССМОТРЕНИЯ</p>
       <h1>В гранте отказано</h1>
-      <p class="result-lead">По итогам демонстрационного рассмотрения заявка не получила одобрение.</p>
+      <p class="result-lead">По итогам рассмотрения заявка не получила одобрение.</p>
 
       <div class="result-details">
         <div><span>Статус заявки</span><strong class="status">Отказано</strong></div>
-        <div><span>Номер заявки</span><strong id="applicationNumber">DEMO-000000</strong></div>
+        <div><span>Номер заявки</span><strong id="applicationNumber">№-000000</strong></div>
         <div><span>Дата формирования результата</span><strong id="resultDate">—</strong></div>
       </div>
-
-      <p class="small-note">Это учебный сценарий. Решение не имеет юридической силы и не относится к реальным грантовым программам.</p>
       <a class="primary-btn centered" href="index.html">Вернуться к форме <span>↺</span></a>
     </div>
   </main>
-
-  <footer>Учебный макет · Не является официальным государственным порталом</footer>
-
   <script>
-    const number = localStorage.getItem('demoApplicationNumber') || 'DEMO-000000';
+    const number = localStorage.getItem('demoApplicationNumber') || '№-000000';
     document.getElementById('applicationNumber').textContent = number;
     document.getElementById('resultDate').textContent =
       new Date().toLocaleDateString('ru-RU');
