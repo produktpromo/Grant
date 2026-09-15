@@ -64,7 +64,20 @@
         </div>
       </div>
 
-      <a class="primary-btn" href="result.html">Подать заявку на грант</a>
+      <button class="primary-btn" id="submitBtn">
+  Подать заявку на грант
+</button>
+
+<div class="processing" id="processing" hidden>
+  <div class="loader"></div>
+  <h2>Заявка рассматривается</h2>
+  <p>Пожалуйста, не закрывайте страницу.</p>
+  <div class="progress-bar">
+    <div id="progress"></div>
+  </div>
+  <p id="timer">Ориентировочное время рассмотрения: 1:30</p>
+</div>
+<script src="script.js"></script>
 
       <p class="fine-print">Заполните данные и отправьте заявку. Решение будет принято в течение 1,5–3 минут.</p>
       <p class="fine-print small">* Данные переданы и рассмотрены в соответствии с порядком предоставления грантов.<br>
