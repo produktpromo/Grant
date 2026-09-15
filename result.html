@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Результат рассмотрения заявки</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div>
+        <strong>ООО «Скултех» — Онлайн-школа «Квантастика»</strong>
+        <span>Лицензия № Л035-01298-77/00123456  |  ИНН 772345678901</span>
+      </div>
+    </div>
+    <div class="resident-badge">Резидент инновационного центра «Сколково»</div>
+  </header>
 
+  <main class="result-container">
+    <div class="result-card">
+      <div class="result-icon">!</div>
+      <p class="eyebrow">РЕЗУЛЬТАТ РАССМОТРЕНИЯ</p>
+      <h1>В гранте отказано</h1>
+      <p class="result-lead">По итогам рассмотрения заявка на федеральный грант не получила одобрение.</p>
+
+      <div class="result-details">
+        <div><span>Статус заявки</span><strong class="status">Отказано</strong></div>
+        <div><span>Номер заявки</span><strong>GR-241509</strong></div>
+        <div><span>Дата формирования результата</span><strong id="resultDate">—</strong></div>
+      </div>
+
+      <a class="primary-btn centered" href="index.html">Вернуться к заявке ↺</a>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('resultDate').textContent = new Date().toLocaleDateString('ru-RU');
+  </script>
+</body>
+</html>
